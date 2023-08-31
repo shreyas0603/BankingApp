@@ -46,11 +46,11 @@ user2.withdraw(2, 500)
 console.log(user2.getAllAccount())
 
 //reference 
-// console.log(user1);
-// console.log(user1.getAllAccount());
-// console.log(user2);
-// console.log(user2.getAllAccount());
-// console.log(g1.getAllCustomer());
+console.log(user1);
+console.log(user1.getAllAccount());
+console.log(user2);
+console.log(user2.getAllAccount());
+console.log(g1.getAllCustomer());
 
 
 user1.transferTo(500, 1, 2, 2)
@@ -62,6 +62,14 @@ console.log(user2.getAllAccount())
 console.log(user1.passbook(1));
 console.log('================================================');
 console.log(user2.passbook(2));
+
+
+console.log(user1.networth(1))
+console.log(user2.networth(2));
+
+
+
+
 
 
 

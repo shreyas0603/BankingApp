@@ -66,6 +66,11 @@ class Account {
         return this.passbook
     }
 
+    
+    getNetBalance(){
+        return this.bankBalance
+    }
+    
 
 }
 

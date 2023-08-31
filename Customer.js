@@ -341,6 +341,30 @@ class Customer {
         }
     }
 
+    networth(custid){
+        try {
+            
+            if(typeof custid != 'number'){
+                throw new Error('Enter Valid Input')
+            }
+
+            let [FoundCustomer, indexofCustomer] = this.#findCustid(custid)
+
+            if(FoundCustomer == null){
+                throw new Error('Customer id No not found')
+            }
+
+            let networth=0
+            for (let index = 0; index < this.account.length; index++) {
+                networth = networth +FoundCustomer.account[index].bankBalance
+            }
+            return `Networth of the Customer is: ${networth}`
+
+        } catch (error) {
+            throw new Error(error.message)
+        }
+    }
+
 }
 
 module.exports = Customer
