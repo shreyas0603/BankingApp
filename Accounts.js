@@ -67,10 +67,7 @@ class Account {
     }
 
     
-    getNetBalance(){
-        return this.bankBalance
-    }
-    
+   
 
 }
 
